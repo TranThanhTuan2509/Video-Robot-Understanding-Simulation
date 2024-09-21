@@ -1,0 +1,28 @@
+#Python environment == 3.8
+#Recommend using linux
+
+ftfy regex tqdm fvcore imageio==2.4.1 imageio-ffmpeg==0.4.5
+
+-U --no-cache-dir gdown --pre # for downloading files from Google Drive using a command-line interface
+
+tensorflow==2.7.0 # If error: UNIMPLEMENTED: DNN library is not found.
+
+optax==0.1.3 # If error: TypeError: 'type' object is not subscriptable
+
+Pillow==9.5.0 # AttributeError: 'FreeTypeFont' object has no attribute 'getsize' ( Pillow 10.x.x error ) 
+openai
+clip
+IPython
+easydict
+pybullet
+moviepy
+openai-clip
+matplotlib
+torch==2.3.1 torchvision==0.18.1
+opencv-python
+tqdm
+imageio
+jax==0.3.25 jaxlib==0.3.25 flax==0.5.3 # NOT COMPATIBLE: jax version is not compatible with jaxlib version
+
+# pybullet.error: Cannot load URDF file when reading 'your URDF file'
+# Typically, URDF file have to go with OBJ-file. In case, your URDF file reference other files like .obj or .stl through <geometry> tag for the 3D geometry of the object. 
